@@ -10,11 +10,12 @@ public class Menu {
 		
 		Operacoes operacoes = new Operacoes();
 		operacoes.defineQuantidadeEValores(scanner);
-		
+
 		//Fazendo a última verificação de quantidade para continuar o programa
 		if(operacoes.getQuantidade() >= operacoes.getQuantidadeMinima()) {
 			
-			operacoes.defineTipoDeCalculo(scanner);
+			EscolhaDeOperacao escolhaDeOperacao = new EscolhaDeOperacao();
+			escolhaDeOperacao.defineTipoDeCalculo(operacoes);
 		
 		}
 		

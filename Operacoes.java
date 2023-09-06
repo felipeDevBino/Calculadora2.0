@@ -29,10 +29,11 @@ public class Operacoes {
 			
 			System.out.println("Digite a quantidade de números para adicionar no programa:");
 			quantidade = Integer.parseInt(scanner.nextLine());
-		
+			System.out.println();
+			
 		}catch(NumberFormatException e) {
 			
-			System.out.println("Tipo de número/caracter inválido, considere utilizar valor numéricos inteiros: (2, 10, 20) .");
+			System.out.println("Tipo de número/caracter inválido, considere utilizar valores numéricos inteiros: (2, 10, 20) .");
 			System.exit(1);
 
 		}
@@ -63,40 +64,6 @@ public class Operacoes {
 				System.exit(1);
 				
 			}
-			
-		}
-		
-	}
-	
-	public void defineTipoDeCalculo(Scanner scanner) {
-		
-		//Chamando a função referente ao tipo de calculo escolhido pelo usuário dentro da própria classe 'Operacoes'
-		
-		System.out.println("\nDigite o tipo de calculo que deseja fazer (somar, subtrair, multiplicar, dividir, media de numeros)"); escolheoCalculo = scanner.nextLine();
-		
-		if(escolheoCalculo.equalsIgnoreCase("somar")) {
-			
-			realizaCalculoDeSoma();
-			
-		}else if(escolheoCalculo.equalsIgnoreCase("subtrair")) {
-			
-			realizaCalculoDeSubtracao();
-			
-		}else if(escolheoCalculo.equalsIgnoreCase("multiplicar")) {
-			
-			realizaCalculoDeMultiplicacao();
-			
-		}else if(escolheoCalculo.equalsIgnoreCase("dividir")) {
-			
-			realizaCalculoDeDivisao();
-			
-		}else if(escolheoCalculo.equalsIgnoreCase("media de numeros")) {
-		
-			realizaCalculoDeMedia();
-			
-		}else {
-			
-			System.out.println("Nome de operação incorreto ou inválido.");
 			
 		}
 		

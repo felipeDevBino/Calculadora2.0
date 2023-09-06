@@ -13,7 +13,7 @@ public class Repeticao {
 		
 	/*/
 		  Contexto principal referente a repetição do código executado na classe Menu com base na escolha do 
-		  usuário na variável 'comando' que muda o estado da variável 'repetir', que por consequencia executa 
+		  usuário na variável 'comando' que muda o estado da variável 'repetir', que por consequência executa 
 		  a ação feita na função 'defineSeRepete' = repetindo ou terminando o programa.
 	/*/
 		
@@ -28,7 +28,8 @@ public class Repeticao {
 				//Fazendo a última verificação de quantidade para continuar o programa
 				if(operacoes.getQuantidade() >= operacoes.getQuantidadeMinima()) {
 					
-					operacoes.defineTipoDeCalculo(scanner);
+					EscolhaDeOperacao escolhaDeOperacao = new EscolhaDeOperacao();
+					escolhaDeOperacao.defineTipoDeCalculo(operacoes);
 					
 				}else {
 					

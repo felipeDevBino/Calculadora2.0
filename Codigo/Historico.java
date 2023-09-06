@@ -1,4 +1,4 @@
-package CalculadoraDinamica;
+package CalculadoraDinamica.Codigo;
 
 public class Historico {
 

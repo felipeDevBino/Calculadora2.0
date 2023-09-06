@@ -1,4 +1,4 @@
-package CalculadoraDinamica;
+package CalculadoraDinamica.Codigo;
 
 import java.util.Scanner;
 
